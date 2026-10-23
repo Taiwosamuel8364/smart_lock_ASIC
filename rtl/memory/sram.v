@@ -13,6 +13,16 @@ module sram (
     reg [7:0] lo_array [0:2047];
     reg [7:0] hi_array [0:2047];
 
+    // Initialize memory arrays to zero
+    integer idx;
+    initial begin
+        read_data = 16'h0000;
+        for (idx = 0; idx < 2048; idx = idx + 1) begin
+            lo_array[idx] = 8'h00;
+            hi_array[idx] = 8'h00;
+        end
+    end
+
     // Synchronous Read & Write Operations on Clock Edge
     always @(posedge clk) begin
         if (sel) begin

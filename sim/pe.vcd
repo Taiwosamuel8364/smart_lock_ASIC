@@ -1,0 +1,123 @@
+$date
+	Wed Oct 21 02:42:12 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_pe $end
+$var wire 8 ! weight_out [7:0] $end
+$var wire 8 " ifmap_out [7:0] $end
+$var wire 32 # acc_out [31:0] $end
+$var parameter 32 $ ACC_WIDTH $end
+$var parameter 32 % DATA_WIDTH $end
+$var reg 1 & clk $end
+$var reg 1 ' clr_acc $end
+$var reg 1 ( enable $end
+$var reg 8 ) ifmap_in [7:0] $end
+$var reg 1 * rst_n $end
+$var reg 8 + weight_in [7:0] $end
+$scope module uut $end
+$var wire 1 & clk $end
+$var wire 1 ' clr_acc $end
+$var wire 1 ( enable $end
+$var wire 8 , ifmap_in [7:0] $end
+$var wire 1 * rst_n $end
+$var wire 8 - weight_in [7:0] $end
+$var wire 16 . mult_product [15:0] $end
+$var parameter 32 / ACC_WIDTH $end
+$var parameter 32 0 DATA_WIDTH $end
+$var reg 32 1 acc_out [31:0] $end
+$var reg 8 2 ifmap_out [7:0] $end
+$var reg 8 3 weight_out [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 0
+b100000 /
+b1000 %
+b100000 $
+$end
+#0
+$dumpvars
+b0 3
+b0 2
+b0 1
+b0 .
+b0 -
+b0 ,
+b0 +
+0*
+b0 )
+0(
+0'
+0&
+b0 #
+b0 "
+b0 !
+$end
+#5000
+1&
+#10000
+0&
+#15000
+1&
+#20000
+0&
+1*
+#25000
+1&
+#30000
+0&
+b1100 .
+b100 +
+b100 -
+b11 )
+b11 ,
+1(
+#35000
+b1100 #
+b1100 1
+b100 !
+b100 3
+b11 "
+b11 2
+1&
+#40000
+0&
+b11111110 +
+b11111110 -
+b1111111111110110 .
+b101 )
+b101 ,
+#45000
+b10000000000000010 #
+b10000000000000010 1
+b11111110 !
+b11111110 3
+b101 "
+b101 2
+1&
+#50000
+0&
+b1010 +
+b1010 -
+b1100100 .
+b1010 )
+b1010 ,
+1'
+#55000
+b1010 !
+b1010 3
+b1010 "
+b1010 2
+b10000000001100110 #
+b10000000001100110 1
+1&
+#60000
+0&
+0'
